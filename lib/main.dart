@@ -165,7 +165,7 @@ class Screen2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/image1.jpg'),
+            Image.asset('assets/image1.jpg',width: 320,height: 200,fit:BoxFit.fill),
             SizedBox(height: 20),
             FutureBuilder(
               future: _getImage('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
@@ -187,7 +187,8 @@ class Screen2 extends StatelessWidget {
               placeholder: (context, url) => CircularProgressIndicator(),
               errorWidget: (context, url, error) => Icon(Icons.error),
                 width: 320,
-                height: 200
+                height: 200,
+                fit:BoxFit.fill
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -216,7 +217,7 @@ class Screen3 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/image1.jpg'),
+            Image.asset('assets/image1.jpg',width: 320,height: 200,fit:BoxFit.fill),
             SizedBox(height: 20),
             FutureBuilder(
               future: _getImage('https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
@@ -238,7 +239,8 @@ class Screen3 extends StatelessWidget {
               placeholder: (context, url) => CircularProgressIndicator(),
               errorWidget: (context, url, error) => Icon(Icons.error),
                 width: 320,
-                height: 200
+                height: 200,
+                fit:BoxFit.fill
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -267,7 +269,7 @@ class Screen4 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/image1.jpg'),
+            Image.asset('assets/image1.jpg', width: 320,height: 200,fit:BoxFit.fill),
             SizedBox(height: 20),
             FutureBuilder(
               future: _getImage('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
@@ -289,7 +291,8 @@ class Screen4 extends StatelessWidget {
               placeholder: (context, url) => CircularProgressIndicator(),
               errorWidget: (context, url, error) => Icon(Icons.error),
                 width: 320,
-                height: 200
+                height: 200,
+                fit:BoxFit.fill
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -318,7 +321,7 @@ class Screen5 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/image1.jpg'),
+            Image.asset('assets/image1.jpg', width: 320,height: 200,fit:BoxFit.fill),
             SizedBox(height: 20),
             FutureBuilder(
               future: _getImage('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
@@ -340,7 +343,8 @@ class Screen5 extends StatelessWidget {
               placeholder: (context, url) => CircularProgressIndicator(),
               errorWidget: (context, url, error) => Icon(Icons.error),
                 width: 320,
-                height: 200
+                height: 200,
+                fit:BoxFit.fill
             ),
             SizedBox(height: 20),
             ElevatedButton(
