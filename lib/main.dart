@@ -8,7 +8,7 @@ Future<Widget?> _getImage(String imageUrl) async {
   await Future.delayed(Duration(seconds: 3));
 
   // Возвращаем виджет с картинкой из интернета
-  return Image.network(imageUrl, width: 320, height: 200);
+  return Image.network(imageUrl, width: 320, height: 200, fit:BoxFit.fill);
 }
 
 // Основная функция для запуска приложения Flutter
@@ -113,7 +113,7 @@ class Screen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/image1.jpg'), // Отображаем локальное изображение
+            Image.asset('assets/image1.jpg', width: 320,height: 200,fit:BoxFit.fill), // Отображаем локальное изображение
             SizedBox(height: 20),
             FutureBuilder(
               future: _getImage('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'), // Загружаем изображение из сети с задержкой
@@ -135,7 +135,8 @@ class Screen1 extends StatelessWidget {
               placeholder: (context, url) => CircularProgressIndicator(),
               errorWidget: (context, url, error) => Icon(Icons.error),
               width: 320,
-              height: 200
+              height: 200,
+              fit: BoxFit.fill,
             ),
             SizedBox(height: 20),
             ElevatedButton(
